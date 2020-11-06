@@ -22,18 +22,21 @@ for (let key in horoscropeWisdom) {
     let chosenIndex = randomNumberGenerator(horoscropeWisdom[key].length)
       
     // use if statements to select the string from the chosen array
-    if (key === firstArray) {
+    if (key === 'firstArray') {
         let firstBlock = horoscropeWisdom[key][chosenIndex]
         personalHoroscope.push(firstBlock)
-    } else if (key === secondArray) {
+    } else if (key === 'secondArray') {
         let secondBlock = horoscropeWisdom[key][chosenIndex]
         personalHoroscope.push(secondBlock)
-    } else if (key === thirdArray) {
+    } else if (key === 'thirdArray') {
         let thirdBlock = horoscropeWisdom[key][chosenIndex]
         horoscropeWisdom.push(thirdBlock)
     }
 } 
 
-function formattingHoroscope() {
-
+function formattingHoroscope(horoscope) {
+    const formatted = horoscope.join(' ')
+    console.log(formatted)
 }
+
+formattingHoroscope(personalHoroscope)
