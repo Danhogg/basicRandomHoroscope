@@ -13,7 +13,7 @@ const horoscropeWisdom = {
     secondArray: ['has bad luck', 'has good luck', 'has great riches', 'has a terrible event'],
     thirdArray: ['in their future', 'on the way', 'in a next life', 'coming tomorrow']
 }
-
+// an array for the return of a personalised message
 let personalHoroscope = []
 
 // This function will generate our random string
