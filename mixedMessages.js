@@ -30,7 +30,7 @@ for (let key in horoscropeWisdom) {
         personalHoroscope.push(secondBlock)
     } else if (key === 'thirdArray') {
         let thirdBlock = horoscropeWisdom[key][chosenIndex]
-        horoscropeWisdom.push(thirdBlock)
+        personalHoroscope.push(thirdBlock)
     }
 } 
 
