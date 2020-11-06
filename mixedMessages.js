@@ -8,11 +8,12 @@ function randomNumberGenerator(value) {
     return randomNumber
 }
 
-function randomString() {
-    const firstArray = ['In your future', 'Coming up in your life', 'There will be'];
-    let randNumber1 = randomNumberGenerator(3)
-    let randString1 = firstArray[randNumber1];
-    const secondArray = []
-    let randNumber2 = randomNumberGenerator(3)
-    let randString2 = secondArray[randNumber2]
+const horoscropeWisdom = {
+    firstArray: ['The moon sign', 'The sun sign', 'The water sign', 'The fire sign'],
+    secondArray: ['has bad luck', 'has good luck', 'has great riches', 'has a terrible event'],
+    thirdArray: ['in their future', 'on the way', 'in a next life', 'coming tomorrow']
+}
+
+function generateRandomString() {
+  
 }
