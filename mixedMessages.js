@@ -16,23 +16,24 @@ const horoscropeWisdom = {
 // an array for the return of a personalised message
 let personalHoroscope = []
 
-// This function will generate our random string
-function generateRandomString() {
-  for (let key in horoscropeWisdom) {
-      let chosenIndex = randomNumberGenerator(horoscropeWisdom[key].length)
+// This will generate our random string to put into personalHoroscope
+
+for (let key in horoscropeWisdom) {
+    let chosenIndex = randomNumberGenerator(horoscropeWisdom[key].length)
       
-      // use if statements to select the string from the chosen array
-      if (key === firstArray) {
-          let firstBlock = horoscropeWisdom[key][chosenIndex]
-          personalHoroscope.push(firstBlock)
-      } else if (key === secondArray) {
-          let secondBlock = horoscropeWisdom[key][chosenIndex]
-          personalHoroscope.push(secondBlock)
-      } else if (key === thirdArray) {
-          let thirdBlock = horoscropeWisdom[key][chosenIndex]
-          horoscropeWisdom.push(thirdBlock)
-      }
-    
-    
-  }
+    // use if statements to select the string from the chosen array
+    if (key === firstArray) {
+        let firstBlock = horoscropeWisdom[key][chosenIndex]
+        personalHoroscope.push(firstBlock)
+    } else if (key === secondArray) {
+        let secondBlock = horoscropeWisdom[key][chosenIndex]
+        personalHoroscope.push(secondBlock)
+    } else if (key === thirdArray) {
+        let thirdBlock = horoscropeWisdom[key][chosenIndex]
+        horoscropeWisdom.push(thirdBlock)
+    }
+} 
+
+function formattingHoroscope() {
+
 }
