@@ -14,6 +14,25 @@ const horoscropeWisdom = {
     thirdArray: ['in their future', 'on the way', 'in a next life', 'coming tomorrow']
 }
 
+let personalHoroscope = []
+
+// This function will generate our random string
 function generateRandomString() {
-  
+  for (let key in horoscropeWisdom) {
+      let chosenIndex = randomNumberGenerator(horoscropeWisdom[key].length)
+      
+      // use if statements to select the string from the chosen array
+      if (key === firstArray) {
+          let firstBlock = horoscropeWisdom[key][chosenIndex]
+          personalHoroscope.push(firstBlock)
+      } else if (key === secondArray) {
+          let secondBlock = horoscropeWisdom[key][chosenIndex]
+          personalHoroscope.push(secondBlock)
+      } else if (key === thirdArray) {
+          let thirdBlock = horoscropeWisdom[key][chosenIndex]
+          horoscropeWisdom.push(thirdBlock)
+      }
+    
+    
+  }
 }
